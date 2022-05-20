@@ -20,8 +20,6 @@ const Wrapper = styled.div`
   white-space: nowrap;
   width: 100%;
   height: 200px;
-  justify-content: center;
-  align-items: center;
   /* &::-webkit-scrollbar {
     display: none;
   } */
