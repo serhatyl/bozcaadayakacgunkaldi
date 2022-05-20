@@ -65,7 +65,7 @@ export default function Home() {
         <div className={styles.description}>
           Bozcaada tatiline gitmemize {day} gün kaldı
         </div>
-        <div>
+        <div style={{ textAlign: "center" }}>
           <a href="https://forms.gle/GiHMHGNoHPm4mDhq7" target="_blank">
             Görüş ve öneri belirtmek için buraya tıklayınız
           </a>
