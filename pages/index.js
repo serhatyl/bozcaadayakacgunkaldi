@@ -1,6 +1,35 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
+import styled from "styled-components";
+import akyuz from "../public/images/akyuzs.jpeg";
+import busra from "../public/images/busra.jpeg";
+import dogan from "../public/images/dogan.jpeg";
+import engin from "../public/images/engin.jpeg";
+import erens from "../public/images/erens.jpeg";
+import setugu from "../public/images/setugu.jpeg";
+import sokezoglu from "../public/images/sokezoglu.jpeg";
+import meltem from "../public/images/meltem.jpeg";
+import semih from "../public/images/semih.jpeg";
+import riza from "../public/images/riza.jpeg";
+
+const Wrapper = styled.div`
+  display: inline-flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  /* &::-webkit-scrollbar {
+    display: none;
+  } */
+  img {
+    height: 200px;
+    max-height: 200px;
+  }
+`;
 
 export default function Home() {
   const [day, setRemainingDay] = useState(0);
@@ -22,6 +51,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Wrapper>
+          <img src={akyuz.src} />
+          <img src={busra.src} />
+          <img src={dogan.src} />
+          <img src={engin.src} />
+          <img src={erens.src} />
+          <img src={setugu.src} />
+          <img src={sokezoglu.src} />
+          <img src={meltem.src} />
+          <img src={semih.src} />
+          <img src={riza.src} />
+        </Wrapper>
         <h1 className={styles.title}>Hoşgeldin! </h1>
         <div className={styles.description}>
           Bozcaada tatiline gitmemize {day} gün kaldı
